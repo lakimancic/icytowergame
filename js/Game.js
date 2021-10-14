@@ -116,7 +116,7 @@ export default class Game{
         });
     }
     async loadSprites() {
-        this.sprites.bg = await loadSprite("images/background.png");
+        this.sprites.bg = await loadSprite("./images/background.png");
         this.sprites.player = await loadSprite("./images/player.png");
         this.sprites.player2 = await loadSprite("./images/player2.png");
         this.sprites.player3 = await loadSprite("./images/player3.png");
