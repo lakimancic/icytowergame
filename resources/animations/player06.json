@@ -1,0 +1,64 @@
+{
+    "stand": {
+        "frames": [
+            [ 2, 13, 36, 52 ],
+            [ 40, 13, 36, 52 ],
+            [ 76, 13, 36, 52 ]
+        ],
+        "framerate": 200,
+        "loop": true
+    },
+    "walk": {
+        "frames":[
+            [ 113, 13, 37, 52 ],
+            [ 150, 13, 38, 53 ],
+            [ 188, 13, 36, 52 ],
+            [ 226, 13, 36, 52 ]
+        ],
+        "framerate": 100,
+        "loop": true
+    },
+    "jump1": {
+        "frames": [
+            [ 266, 8, 34, 57 ]
+        ],
+        "framerate": 200,
+        "loop": false
+    },
+    "jump2": {
+        "frames": [
+            [ 305, 8, 33, 57 ]
+        ],
+        "framerate": 200,
+        "loop": false
+    },
+    "jump3": {
+        "frames": [
+            [ 344, 8, 34, 57 ]
+        ],
+        "framerate": 200,
+        "loop": false
+    },
+    "jump4": {
+        "frames": [
+            [ 383, 10, 38, 56 ]
+        ],
+        "framerate": 200,
+        "loop": false
+    },
+    "star": {
+        "frames": [
+            [ 431, 7, 44, 59 ]
+        ],
+        "framerate": 200,
+        "loop": false
+    },
+    "edge": {
+        "frames": [
+            [ 483, 12, 44, 53 ],
+            [ 532, 12, 44, 53 ]
+        ],
+        "framerate": 200,
+        "loop": true
+    }
+}

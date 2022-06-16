@@ -11,7 +11,7 @@ const msg_types = [
     [0, 784, 612, 133]
 ];
 
-export default class Message{
+class Message{
     constructor(ctx,sprites,type){
         this.ctx = ctx;
         this.sprites = sprites;
@@ -33,7 +33,9 @@ export default class Message{
         this.ctx.rotate(this.angle * Math.PI / 180);
         this.ctx.scale(this.scale, this.scale);
         this.ctx.translate(-320, -380);
-        this.ctx.drawImage(this.sprites.msgs, this.sx, this.sy, this.w, this.h, this.x, this.y, this.w, this.h);
+        this.ctx.drawImage(this.sprites.get("messages"), this.sx, this.sy, this.w, this.h, this.x, this.y, this.w, this.h);
         this.ctx.restore();
     }
 }
+
+export { Message };

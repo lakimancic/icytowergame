@@ -5,7 +5,8 @@ ctx.webkitImageSmoothingEnabled = false;
 ctx.mozImageSmoothingEnabled = false;
 ctx.imageSmoothingEnabled = false;
 
-import Game from "./Game.js"
+// Game
+import { Game } from './Game.js';
 
-const game = new Game(ctx, canvas);
+let game = new Game(canvas, ctx);
 game.run();
