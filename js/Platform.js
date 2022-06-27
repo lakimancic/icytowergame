@@ -40,8 +40,8 @@ class Platform {
 
     async load() {
         for(let i=1; i < 12; i++){
-            await this.textures.load('floors' + i, '/resources/images/others/floors' + i + '.png');
-            await this.textures.load('sign' + i, '/resources/images/others/sign' + i + '.png');
+            await this.textures.load('floors' + i, '/icytowergame/resources/images/others/floors' + i + '.png');
+            await this.textures.load('sign' + i, '/icytowergame/resources/images/others/sign' + i + '.png');
         }
     }
 
