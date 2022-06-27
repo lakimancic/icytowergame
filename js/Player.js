@@ -61,16 +61,16 @@ class Player {
     }
 
     async load() {
-        await this.textures.load(this.playername, "/resources/images/characters/" + this.playername + ".png");
-        await this.animations.load(this.playername, "/resources/animations/" + this.playername + ".json");
+        await this.textures.load(this.playername, "/icytowergame/resources/images/characters/" + this.playername + ".png");
+        await this.animations.load(this.playername, "/icytowergame/resources/animations/" + this.playername + ".json");
 
-        await this.sounds.load("low_jump", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_low_jump.ogg");
-        await this.sounds.load("medium_jump", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_medium_jump.ogg");
-        await this.sounds.load("high_jump", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_high_jump.ogg");
-        await this.sounds.load("fall", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_fall.ogg");
-        await this.sounds.load("edge", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_edge.ogg");
+        await this.sounds.load("low_jump", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_low_jump.ogg");
+        await this.sounds.load("medium_jump", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_medium_jump.ogg");
+        await this.sounds.load("high_jump", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_high_jump.ogg");
+        await this.sounds.load("fall", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_fall.ogg");
+        await this.sounds.load("edge", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_edge.ogg");
         //this.sounds.map["edge"].loop = true;
-        await this.sounds.load("greeting", "/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_greeting.ogg");
+        await this.sounds.load("greeting", "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.playername] + "_greeting.ogg");
     }
 
     update(dt) {
