@@ -22,17 +22,17 @@ class MainMenuState extends State{
 
     async load() {
         // Load textures
-        await this.textures.load('background', '/resources/images/backgrounds/menu_bg.png');
-        await this.textures.load('instructs', '/resources/images/backgrounds/instructs.png');
-        await this.textures.load('arrow', '/resources/images/others/menu_arrow.png');
+        await this.textures.load('background', '/icytowergame/resources/images/backgrounds/menu_bg.png');
+        await this.textures.load('instructs', '/icytowergame/resources/images/backgrounds/instructs.png');
+        await this.textures.load('arrow', '/icytowergame/resources/images/others/menu_arrow.png');
         
         // Load sounds
-        await this.sounds.load('menu_choose', '/resources/audio/menu_choose.ogg');
-        await this.sounds.load('menu_change', '/resources/audio/menu_change.ogg');
+        await this.sounds.load('menu_choose', '/icytowergame/resources/audio/menu_choose.ogg');
+        await this.sounds.load('menu_change', '/icytowergame/resources/audio/menu_change.ogg');
 
         // Load music background
         if(this.startMusic){
-            await this.music.load('background', '/resources/audio/background.ogg');
+            await this.music.load('background', '/icytowergame/resources/audio/background.ogg');
             this.music.map['background'].loop = true;
         }
 
@@ -170,13 +170,13 @@ class SingleplayerMenuState extends State{
 
     async load() {
         // Load textures
-        await this.textures.load('background', '/resources/images/backgrounds/menu_bg.png');
-        await this.textures.load('arrow', '/resources/images/others/menu_arrow.png');
+        await this.textures.load('background', '/icytowergame/resources/images/backgrounds/menu_bg.png');
+        await this.textures.load('arrow', '/icytowergame/resources/images/others/menu_arrow.png');
         await this.textures.load('paper2', '/resources/images/others/paper2.png');
 
         // Load sounds
-        await this.sounds.load('menu_choose', '/resources/audio/menu_choose.ogg');
-        await this.sounds.load('menu_change', '/resources/audio/menu_change.ogg');
+        await this.sounds.load('menu_choose', '/icytowergame/resources/audio/menu_choose.ogg');
+        await this.sounds.load('menu_change', '/icytowergame/resources/audio/menu_change.ogg');
 
         // Set loading to false
         this.loading = false;
