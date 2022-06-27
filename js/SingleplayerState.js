@@ -72,39 +72,39 @@ class SingleplayerState extends State {
 
     async load() {
         // Load textures
-        await this.textures.load('background', '/resources/images/backgrounds/background.png');
-        await this.textures.load('comboclock', '/resources/images/others/ComboClock.png');
-        await this.textures.load('messages', '/resources/images/others/messages.png');
-        await this.textures.load('paper1', '/resources/images/others/paper1.png');
-        await this.textures.load('pointer', '/resources/images/others/menu_arrow.png');
-        await this.textures.load('particles', '/resources/images/others/particles.png');
+        await this.textures.load('background', '/icytowergame/resources/images/backgrounds/background.png');
+        await this.textures.load('comboclock', '/icytowergame/resources/images/others/ComboClock.png');
+        await this.textures.load('messages', '/icytowergame/resources/images/others/messages.png');
+        await this.textures.load('paper1', '/icytowergame/resources/images/others/paper1.png');
+        await this.textures.load('pointer', '/icytowergame/resources/images/others/menu_arrow.png');
+        await this.textures.load('particles', '/icytowergame/resources/images/others/particles.png');
 
         await this.player.load();
         await this.platform.load();
 
         // Loading sounds
         // good, sweet, great, super, wow, amazing, extreme, fantastic, splendid, noway
-        await this.sounds.load('good', '/resources/audio/good.ogg');
-        await this.sounds.load('sweet', '/resources/audio/sweet.ogg');
-        await this.sounds.load('great', '/resources/audio/great.ogg');
-        await this.sounds.load('super', '/resources/audio/super.ogg');
-        await this.sounds.load('wow', '/resources/audio/wow.ogg');
-        await this.sounds.load('amazing', '/resources/audio/amazing.ogg');
-        await this.sounds.load('extreme', '/resources/audio/extreme.ogg');
-        await this.sounds.load('fantastic', '/resources/audio/fantastic.ogg');
-        await this.sounds.load('splendid', '/resources/audio/splendid.ogg');
-        await this.sounds.load('noway', '/resources/audio/noway.ogg');
+        await this.sounds.load('good', '/icytowergame/resources/audio/good.ogg');
+        await this.sounds.load('sweet', '/icytowergame/resources/audio/sweet.ogg');
+        await this.sounds.load('great', '/icytowergame/resources/audio/great.ogg');
+        await this.sounds.load('super', '/icytowergame/resources/audio/super.ogg');
+        await this.sounds.load('wow', '/icytowergame/resources/audio/wow.ogg');
+        await this.sounds.load('amazing', '/icytowergame/resources/audio/amazing.ogg');
+        await this.sounds.load('extreme', '/icytowergame/resources/audio/extreme.ogg');
+        await this.sounds.load('fantastic', '/icytowergame/resources/audio/fantastic.ogg');
+        await this.sounds.load('splendid', '/icytowergame/resources/audio/splendid.ogg');
+        await this.sounds.load('noway', '/icytowergame/resources/audio/noway.ogg');
         // hurryup, ring
-        await this.sounds.load('hurryup', '/resources/audio/hurryup.ogg');
-        await this.sounds.load('ring', '/resources/audio/ring.ogg');
+        await this.sounds.load('hurryup', '/icytowergame/resources/audio/hurryup.ogg');
+        await this.sounds.load('ring', '/icytowergame/resources/audio/ring.ogg');
         // menu_change, menu_choose
-        await this.sounds.load('menu_change', '/resources/audio/menu_change.ogg');
-        await this.sounds.load('menu_choose', '/resources/audio/menu_choose.ogg');
+        await this.sounds.load('menu_change', '/icytowergame/resources/audio/menu_change.ogg');
+        await this.sounds.load('menu_choose', '/icytowergame/resources/audio/menu_choose.ogg');
         // tryagain, gameover
-        await this.sounds.load('tryagain', '/resources/audio/tryagain.ogg');
-        await this.sounds.load('gameover', '/resources/audio/gameover.ogg');
+        await this.sounds.load('tryagain', '/icytowergame/resources/audio/tryagain.ogg');
+        await this.sounds.load('gameover', '/icytowergame/resources/audio/gameover.ogg');
 
-        await this.music.load('player', "/resources/audio/characters/" + playerNameToSoundName[this.options["singleplayer"]["character"]] +"_background.ogg");
+        await this.music.load('player', "/icytowergame/resources/audio/characters/" + playerNameToSoundName[this.options["singleplayer"]["character"]] +"_background.ogg");
         this.music.map["player"].loop = true;
 
         this.music.map["background"].pause();
