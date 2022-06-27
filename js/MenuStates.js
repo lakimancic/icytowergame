@@ -172,7 +172,7 @@ class SingleplayerMenuState extends State{
         // Load textures
         await this.textures.load('background', '/icytowergame/resources/images/backgrounds/menu_bg.png');
         await this.textures.load('arrow', '/icytowergame/resources/images/others/menu_arrow.png');
-        await this.textures.load('paper2', '/resources/images/others/paper2.png');
+        await this.textures.load('paper2', '/icytowergame/resources/images/others/paper2.png');
 
         // Load sounds
         await this.sounds.load('menu_choose', '/icytowergame/resources/audio/menu_choose.ogg');
